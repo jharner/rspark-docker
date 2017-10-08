@@ -26,8 +26,6 @@ services:
     links:
       - hadoop
       - postgres
-    volumes:
-      - ./rspark-tests:/home/rstudio/rspark-tests
     depends_on: 
       - hadoop
       - hive
