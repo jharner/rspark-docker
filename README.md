@@ -3,7 +3,10 @@
 `rspark-docker` runs R, PostreSQL, YARN, Hadoop, Hive, and Spark in Docker containers. Running the start script downloads images from Docker Hub the first time it is run and check for changes thereafter.
 
 ### Installing Docker for Mac
-Docker runs on macOS 10.11 (El Capitan) or later. Go to [Docker for the Mac:](https://www.docker.com/docker-mac) and follow the directions for installaition. 
+
+The Mac is a BSD UNIX-based system and therefore has many of the tools required for data science. Other tools are easy to install. For the most part data science runs on open-source Linux-based environments, which are compatible with macOS. Your principal interface to the UNIX side of the Mac is the Terminal.app found in the Utilities directory (folder) in the Applications directory (folder). You should drag this App to your Dock for easy access. You can also run the X11 windowing system, but it is not necessary since we will be working from the command line.
+
+The Docker solutions work on a Mac with macOS 10.11 (El Capitan) or later. Go here to get [Docker for the Mac:](https://www.docker.com/docker-mac) and follow the directions for installation.  
 
 ### Installing Docker for Windows
 For Windows first install [git for Windows](https://git-for-windows.github.io). This will give you an emulated bash shell which you will need for running Docker and/ or Vagrant and of course git for version control.  Docker only runs on Windows 10. Pro will definitely work, but Home may or may not. If you do not have Win 10, you will need to run `rspark` in VirtualBox provisioned by Vagrant. Go to [Docker for the Windows:](https://www.docker.com/docker-windows) and follow the directions for installaition.
