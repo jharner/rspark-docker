@@ -20,7 +20,7 @@ Once Hyper-V is installed, get [Docker for the Windows](https://www.docker.com/d
 
 The following installations assume you have a `bash` shell available. Ideally, you should be on a high-speed network.  
 
-### Running rspark from Docker
+### Running rspark from Docker Hub
 
 Before beginning, launch Terminal.app on the Mac or git bash on Windows (start typing bash from the Start menu to find it). Once running, you should be in your home directory, e.g, type `pwd` to verify. Stay there or `cd` to wherever you want `rspark` installed.
 
