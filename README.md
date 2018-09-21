@@ -9,7 +9,16 @@ The Mac is a BSD UNIX-based system and therefore has many of the tools required 
 The Docker solutions work on a Mac with macOS 10.11 (El Capitan) or later. Go here to get [Docker for the Mac:](https://www.docker.com/docker-mac) and follow the directions for installation.  
 
 ### Installing Docker for Windows
-For Windows first install [git for Windows](https://git-for-windows.github.io). This will give you an emulated bash shell which you will need for running Docker and/ or Vagrant and of course git for version control.  Docker only runs on Windows 10. Pro will definitely work, but Home may or may not. If you do not have Win 10, you will need to run `rspark` in VirtualBox provisioned by Vagrant. Go to [Docker for the Windows:](https://www.docker.com/docker-windows) and follow the directions for installaition.
+
+Windows is not UNIX based and requires additional software. The basic requirement we need here is access to the `bash` shell. The easiest solution is a bash emulator.  
+
+For bash access install [git for Windows](https://git-for-windows.github.io). This will give you an emulated bash shell which we need for running Docker and/ or Vagrant and of course `git` for version control.  
+
+Docker requires a hypervisor (Hyper-V in the case of Windows) to run and it is not installed by default on Windows 10. Hyper-V can be installed on Windows 10 Enterprise, Professional, and Education, but not on Windows 10 Home, Mobile, and earlier verions of Windows. If you meet the system requirements, follow the instruction for installing [Hyper-V here](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).  
+
+Once Hyper-V is installed, get [Docker for the Windows](https://www.docker.com/docker-windows) and follow the directions for installation.  
+
+The following installations assume you have a `bash` shell available. Ideally, you should be on a high-speed network.  
 
 ### Running rspark from Docker
 Before beginning launch Terminal.app on the Mac or git bash on Windows (start typing bash from the Start menu to find it). Once running, you should be in your home direcotry, e.g, type `pwd` to verify. Stay there or `cd` to wherever you want `rspark` installed.
