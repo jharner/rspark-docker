@@ -1,10 +1,10 @@
 ## rspark-docker
 
-`rspark-docker` runs R, PostreSQL, YARN, Hadoop, Hive, and Spark in Docker containers. Running the `start.sh` script as below downloads images from Docker Hub the first time it is run and checks for updates thereafter.
+`rspark-docker` runs R, PostreSQL, Hadoop, Hive, and Spark in Docker containers. Running the `start.sh` script below downloads images from Docker Hub the first time it is run and checks for updates thereafter.
 
 ### Installing Docker for Mac
 
-The Mac is a BSD UNIX-based system and therefore has many of the tools required for data science. Other tools are easy to install. For the most part data science runs on open-source Linux-based environments, which are compatible with macOS. Your principal interface to the UNIX side of the Mac is the Terminal.app found in the Utilities subdirectory (folder) in the Applications directory (folder). You should drag this App to your Dock for easy access.
+The Mac is a BSD UNIX-based system and therefore has many of the tools required for data science. Other tools are easy to install. Your principal interface to the UNIX side of the Mac is the Terminal.app found in the Utilities subdirectory (folder) of the Applications directory (folder). You should drag this App to your Dock for easy access.
 
 macOS comes preinstalled with `git`, but it should be updated. Go to: [https://git-scm.com/downloads](https://git-scm.com/downloads) and download/install the latest release. 
 
@@ -22,19 +22,20 @@ Once Hyper-V is installed, get [Docker for the Windows](https://www.docker.com/d
 
 The following installations assume you have a `bash` shell available. Ideally, you should be on a high-speed network.  
 
-### Running rspark from Docker Hub
+### Creating a local `rspark-docker` repo
 
 Before beginning, launch Terminal.app on the Mac or git bash on Windows (start typing bash from the Start menu to find it). Once running, you should be in your home directory. Type `pwd` to verify. Stay there or `cd` to wherever you want `rspark-docker` installed.
 
-`rspark` can be installed by pulling the Docker images from Docker Hub. Run the following command in the terminal:  
+The `rspark` environment can be installed by cloning `rsaprk-docker` from GitHub. Run the following command in the terminal:  
 ```
 git clone https://github.com/jharner/rspark-docker.git
 ```
-This should only be run the first time. If `rspark-docker` gets updated, execute:
-```
-cd rspark-docker
-git pull origin master
-```
+This should only be run the first time.
+
+Note: Alternately, the `rspark-docker` repo can be cloned by clicking on the `Clone or download` green button and then clicking on the `Open on Desktop`.
+
+### Running `rspark-docker`
+
 You are now ready to start your session. Assuming you are in the parent directory of `rspark-docker`, execute:
 ```
 cd rspark-docker
@@ -49,7 +50,11 @@ It will take awhile the first time or after a pull from GitHub. Eventually, you 
 
 **IMPORTANT:** leave the program running in the terminal, i.e., do NOT use Control-C and do not quit the terminal. The Docker containers are running in the background.
 
-Now open a browser in Chrome (or Firefox or Safari) and type the url as: `localhost:8787` and sign into RStudio:  
+Now open a browser in Chrome (or Firefox or Safari) and type the url as:
+```
+localhost:8787
+````
+and sign into RStudio as: 
 
 Username: rstudio  
 Password: rstudio  
@@ -61,4 +66,12 @@ To start the containers again, assuming you are in your home directory, execute 
 ./start.sh
 ```
 if you are in the `rspark-docker` directory. Then login to RStudio as before.
+
+### Updating your local `rspark-docker` repo.
+
+If `rspark-docker` gets updated, execute:
+```
+git pull origin master
+```
+assuming you are in the `rspark-docker` directory.
 
