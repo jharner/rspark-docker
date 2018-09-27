@@ -26,13 +26,13 @@ The following installations assume you have a `bash` shell available. Ideally, y
 
 Before beginning, launch Terminal.app on the Mac or git bash on Windows (start typing bash from the Start menu to find it). Once running, you should be in your home directory. Type `pwd` to verify. Stay there or `cd` to wherever you want `rspark-docker` installed.
 
-The `rspark` environment can be installed by cloning `rsaprk-docker` from GitHub. Run the following command in the terminal:  
+The `rspark` environment can be installed by cloning `rspark-docker` from GitHub. Run the following command in the terminal:  
 ```
 git clone https://github.com/jharner/rspark-docker.git
 ```
 This should only be run the first time.
 
-Note: Alternately, the `rspark-docker` repo can be cloned by clicking on the `Clone or download` green button and then clicking on the `Open on Desktop`.
+Note: Alternately, the `rspark-docker` repo can be cloned by clicking on the `Clone or download` green button and then clicking on the `Open on Desktop` in top level of the remote `rspark-docker` repo (this page).
 
 ### Running `rspark-docker`
 
@@ -61,11 +61,11 @@ Password: rstudio
 
 When finished, quit the current R session (red button). Then return to your local terminal and type: Control-C to stop the containers, which will return the prompt.
 
-To start the containers again, assuming you are in your home directory, execute the following commands:  
+To start the containers again, assuming you are in the `rspark-docker` directory, execute the following commands:  
 ```
 ./start.sh
 ```
-if you are in the `rspark-docker` directory. Then login to RStudio as before.
+Then login to RStudio as before.
 
 ### Updating your local `rspark-docker` repo.
 
