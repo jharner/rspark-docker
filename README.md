@@ -1,14 +1,14 @@
 ## rspark-docker
 
-`rspark-docker` runs R, PostreSQL, YARN, Hadoop, Hive, and Spark in Docker containers. Running the `start.sh` script as below downloads images from Docker Hub the first time it is run and check for updates thereafter.
+`rspark-docker` runs R, PostreSQL, YARN, Hadoop, Hive, and Spark in Docker containers. Running the `start.sh` script as below downloads images from Docker Hub the first time it is run and checks for updates thereafter.
 
 ### Installing Docker for Mac
 
-The Mac is a BSD UNIX-based system and therefore has many of the tools required for data science. Other tools are easy to install. For the most part data science runs on open-source Linux-based environments, which are compatible with macOS. Your principal interface to the UNIX side of the Mac is the Terminal.app found in the Utilities subdirectory (folder) in the Applications directory (folder). You should drag this App to your Dock for easy access. You can also run the X11 windowing system, but it is not necessary since we will be working from the command line.
+The Mac is a BSD UNIX-based system and therefore has many of the tools required for data science. Other tools are easy to install. For the most part data science runs on open-source Linux-based environments, which are compatible with macOS. Your principal interface to the UNIX side of the Mac is the Terminal.app found in the Utilities subdirectory (folder) in the Applications directory (folder). You should drag this App to your Dock for easy access.
 
 macOS comes preinstalled with `git`, but it should be updated. Go to: [https://git-scm.com/downloads](https://git-scm.com/downloads) and download/install the latest release. 
 
-Docker runs on macOS 10.11 (El Capitan) or later. Go here to get [Docker for the Mac:](https://www.docker.com/docker-mac) and follow the directions for installation.  
+Docker runs on macOS 10.11 (El Capitan) or later. Go here to get [Docker for the Mac](https://www.docker.com/docker-mac) and follow the directions for installation.  
 
 ### Installing Docker for Windows
 
@@ -30,7 +30,7 @@ Before beginning, launch Terminal.app on the Mac or git bash on Windows (start t
 ```
 git clone https://github.com/jharner/rspark-docker.git
 ```
-This should only be run the first time. If `rspark-docker` gets updated (I will notify you if this is the case.), execute:
+This should only be run the first time. If `rspark-docker` gets updated, execute:
 ```
 cd rspark-docker
 git pull origin master
@@ -40,7 +40,7 @@ You are now ready to start your session. Assuming you are in the parent director
 cd rspark-docker
 ./start.sh
 ```
-The last command runs the `start.sh` shell script, pulls the pre-built tagged images from Docker Hub (currently 0.9.2), and launches the containers. You must have execute privileges to run the shell script. If not, use `chmod`, e.g., 
+The last command runs the `start.sh` shell script, pulls the pre-built tagged images from Docker Hub (currently 0.9.2), and launches the containers. You must have execute privileges to run the shell script. If not, use `chmod`, i.e., 
 ```
 chmod 755 start.sh`
 ````
