@@ -27,11 +27,11 @@ Once Hyper-V is installed, get [Docker for the Windows](https://www.docker.com/d
 
 **Note:** If you are taking a course and you are unable to install any of the above components, Mac or Windows, you will be given an IP address pointing to a Amazon AWS account. In this case, you can connect to `rspark` on AWS using a browser with the URL:port as `<IP address>:8787` rather than `localhost:8787`. You then login with `rstudio` as both the login and password as described below.  
 
-If you are not taking a course, you must create your own account to run `rspark`.
+If you are not taking a course, you must create your own AWS account to run `rspark`.
 
 #### Creating a local `rspark-docker` repo
 
-The following installations assume you have a `bash` shell available with `git` and Docker installed. Ideally, you should be on a high-speed network.  
+The following instructions assume you have a `bash` shell available with `git` and Docker installed. Ideally, you should be on a high-speed network.  
 
 Before beginning, launch Terminal.app on the Mac or git bash on Windows (start typing bash from the Start menu to find it). Once running, you should be in your home directory. Type `pwd` to verify. Stay there or `cd` to wherever you want `rspark-docker` installed.
 
@@ -81,4 +81,13 @@ If `rspark-docker` gets updated, execute:
 git pull origin master
 ```
 assuming you are in the `rspark-docker` directory.
+
+#### Installing the rspark-tutorial
+
+Once you have `rspark` running in Docker containers, locally or in AWS, you may want to install the `rspark-tutorial` Go to the `rspark-tutorial` GitHub repo here:  
+[rspark-tutorial](https://github.com/jharner/rspark-tutorial)  
+
+and follow the instructions.
+
+
 
