@@ -64,7 +64,7 @@ localhost:8787
 and sign into RStudio as: 
 
 Username: rstudio  
-Password: rstudio  
+Password: rstudiojh
 
 When finished, quit the current R session (red button). Then return to your local terminal and type: Control-C to stop the containers, which will return the prompt.
 
