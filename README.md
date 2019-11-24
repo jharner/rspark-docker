@@ -48,7 +48,7 @@ You are now ready to start your session. Assuming you are in the parent director
 cd rspark-docker
 ./start.sh
 ```
-The last command runs the `start.sh` shell script, which pulls the pre-built tagged images from Docker Hub (currently 0.9.2), and launches the containers. You must have execute privileges to run the shell script. If not, issue `chmod` from the command line, i.e., 
+The last command runs the `start.sh` shell script, which pulls the pre-built tagged images from Docker Hub (currently 0.9.6), and launches the containers. You must have execute privileges to run the shell script. If not, issue `chmod` from the command line, i.e., 
 ```
 chmod 755 start.sh`
 ````
