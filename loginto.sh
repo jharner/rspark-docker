@@ -2,27 +2,27 @@
 echo "\n"
 
 PS3='Choose a container to log in to: '
-options=("Rstudio" "Hadoop" "Postgres" "Hive" "Cancel" )
+options=("rstudio" "hadoop" "postgres" "hive" "cancel" )
 select opt in "${options[@]}"
 do
     case $opt in
-        "Rstudio")
+        "rstudio")
             docker exec -ti rspark-docker_rstudio_1 bash
             break
             ;;
-        "Hadoop")
+        "hadoop")
             docker exec -ti rspark-docker_hadoop_1 bash
             break
             ;;
-        "Postgres")
+        "postgres")
             docker exec -ti rspark-docker_postgres_1 bash
             break
             ;;
-        "Hive")
+        "hive")
             docker exec -ti rspark-docker_hive_1 bash
             break
             ;;
-        "Cancel")
+        "cancel")
             break
             ;;
         *) echo invalid option;;
