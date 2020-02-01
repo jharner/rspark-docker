@@ -27,8 +27,11 @@ services:
     restart: always
     environment:
       - PASSWORD=rstudiojh
+    volumes:
+      - ./data/rstudio:/home/rstudio
     ports:
       - "8787:8787" # RstudioUI
+      - "4040:4040"
     links:
       - hadoop
       - postgres
