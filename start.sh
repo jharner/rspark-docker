@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 if [[ ! -e data ]]; then
 	mkdir data

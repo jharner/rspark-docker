@@ -7,8 +7,6 @@ services:
       - "5432:5432"     # Postgres
     volumes:
       - ./data/pg-data:/opt/pg-data
-      
-      
   hadoop:
     image: jharner/rspark-hadoop:0.9.8
     restart: always
@@ -17,15 +15,13 @@ services:
     ports:
       - "9000:9000"     # Hadoop
       - "50070:50070"   # Hadoop UI Access
-      
-   hive:
+  hive:
     image: jharner/rspark-hive:0.9.8
     restart: always
     ports:
       - "10000:10000"   # Hive
     depends_on:
-      - hadoop   
-         
+      - hadoop
   rstudio:
     image: jharner/rspark-rstudio:0.9.8
     restart: always
