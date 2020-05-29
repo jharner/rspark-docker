@@ -17,4 +17,4 @@ if [[ ! -e data/hadoop ]]; then
 	mkdir data/hadoop
 fi
 
-docker-compose up
+docker-compose up -d
