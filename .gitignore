@@ -6,7 +6,7 @@ data
 derby.log
 metastore_db
 *.html
-*nb.html
+*.nb.html
 .Rhistory
 .rstudio
 *.bbprojectdata
