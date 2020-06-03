@@ -9,3 +9,7 @@ metastore_db
 *nb.html
 .Rhistory
 .rstudio
+*.bbprojectdata
+*.bbprojectsettings
+*Scratchpad.txt
+*.worksheet
