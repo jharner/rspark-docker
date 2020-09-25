@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 services:
   postgres:
     image: jharner/rspark-postgres:0.9.9
