@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"     # Postgres
     volumes:
-      - rspark_pgdata:/opt/pg-data
+      - ./data/pg-data:/opt/pg-data
 
   hadoop:
     image: jharner/rspark-hadoop:1.0.3
@@ -20,7 +20,7 @@ services:
       - "9000:9000"     # Hadoop
       - "50070:50070"   # Hadoop UI
     volumes:
-      - rspark_hadoopdata:/opt/hadoop
+      - ./data/hadoop:/opt/hadoop
 
   hive:
     image: jharner/rspark-hive:1.0.3
@@ -29,7 +29,6 @@ services:
     restart: always
     ports:
       - "10000:10000"   # Hive
-      - "9999:9999"     # Hive UI
     depends_on:
       - hadoop
       - postgres
@@ -42,16 +41,10 @@ services:
     environment:
       - PASSWORD=rstudiojh
     ports:
-      - "8787:8787"     # RStudio UI
+      - "8787:8787"     # Rstudio UI
       - "4040:4040"     # Spark Web UI
     volumes:
-      - rspark_rstudio:/home/rstudio
+      - ./data/rstudio:/home/rstudio
     depends_on: 
       - hadoop
       - hive
-
-volumes:
-  rspark_hadoopdata:
-  rspark_rstudio:
-  rspark_pgdata:
-  rspark_sparkdata:
