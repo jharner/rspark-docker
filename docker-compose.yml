@@ -46,6 +46,7 @@ services:
       - "4040:4040"     # Spark Web UI
     volumes:
       - rspark_rstudio:/home/rstudio
+      - ./rspark-tutorial:/home/rstudio/rspark_tutorial
     depends_on: 
       - hadoop
       - hive

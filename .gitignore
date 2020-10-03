@@ -1,6 +1,8 @@
 buda515modules
 rspark-notes
 rspark-tests
+rspark-tutorial
+.rspark-version
 data
 .DS_Store
 derby.log
