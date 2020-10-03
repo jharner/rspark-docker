@@ -1,6 +1,5 @@
 ### rspark-docker
 
-
 `rspark-docker` runs R, PostreSQL, Hadoop, Hive, and Spark in Docker containers. Running the `start.sh` script below downloads images from Docker Hub the first time it is run and checks for updates thereafter.
 
 #### Installing Git and Docker for Mac
